@@ -7,14 +7,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author Reyton
  */
 @Controller
-public class HelloController {
+public class SystemController {
     @RequestMapping("/login")
-    public String index() {
+    public String login() {
         return "login";
     }
 
     @RequestMapping("/index")
-    public String hello() {
+    public String index() {
+        return "index";
+    }
+
+    @RequestMapping("/")
+    public String root() {
         return "index";
     }
 }
