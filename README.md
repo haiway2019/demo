@@ -2,6 +2,10 @@
 
 就这样吧，懒得想懒得写了。
 
+预览地址：http://demo.rey70n.com/
+用户名：guest
+密码：guest
+
 Introduction
 ---
 
