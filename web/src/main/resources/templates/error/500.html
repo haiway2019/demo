@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Demo | 500 Error</title>
+    <title>Demo | 500 错误</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link th:href="@{../css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{../font-awesome/css/font-awesome.css}" rel="stylesheet">
 
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link th:href="@{../css/animate.css}" rel="stylesheet">
+    <link th:href="@{../css/style.css}" rel="stylesheet">
 
 </head>
 
@@ -21,17 +21,17 @@
 
 <div class="middle-box text-center animated fadeInDown">
     <h1>500</h1>
-    <h3 class="font-bold">Internal Server Error</h3>
+    <h3 class="font-bold">内部服务器错误</h3>
 
     <div class="error-desc">
-        The server encountered something unexpected that didn't allow it to complete the request. We apologize.<br/>
-        You can go back to main page: <br/><a href="../index.html" class="btn btn-primary m-t">Dashboard</a>
+        服务器遇到意外的事情，不允许它完成请求。 我们抱歉。<br/>
+        你可以回到主页面: <br/><a href="/" class="btn btn-primary m-t">仪表板</a>
     </div>
 </div>
 
 <!-- Mainly scripts -->
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script th:src="@{../js/jquery-3.1.1.min.js}"></script>
+<script th:src="@{../js/bootstrap.min.js}"></script>
 
 </body>
 
