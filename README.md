@@ -1,2 +1,20 @@
 # demo
-这次我都不想写太多，像前面发过誓要认真做好的项目结果就写了个大概的框架就没继续完成下去了，差不多就行了，到后期再来改。
+
+Introduction
+---
+
+- git clone https://github.com/Rey70N/demo.git
+- cd demo && mvn install
+- java -jar target/web-v0.0.3-beta.2.jar
+- go to http://localhos/ default port: 80
+- have fun.
+
+Documentation
+---
+
+- English:No
+- 简体中文:无
+- 繁體中文:無
+- Deutsch:Keine
+- русский:нет
+- Français:Aucun
