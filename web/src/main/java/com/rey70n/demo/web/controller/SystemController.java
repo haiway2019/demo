@@ -1,5 +1,7 @@
 package com.rey70n.demo.web.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
@@ -15,18 +17,24 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 public class SystemController {
+
+    private static final Logger logger = LoggerFactory.getLogger(SystemController.class);
+
     @RequestMapping("/login")
-    public String login() {
+    public String login(HttpServletRequest request) {
+        logger.info("IP:{}访问【登录】页面。", request.getRemoteAddr());
         return "login";
     }
 
     @RequestMapping("/index")
-    public String index() {
+    public String index(HttpServletRequest request) {
+        logger.info("IP:{}访问【首页】页面。", request.getRemoteAddr());
         return "index";
     }
 
     @RequestMapping("/")
-    public String root() {
+    public String root(HttpServletRequest request) {
+        logger.info("IP:{}访问【首页】页面。", request.getRemoteAddr());
         return "index";
     }
 
@@ -39,6 +47,7 @@ public class SystemController {
         /***
          * 您可以随意重定向，但通常再次显示登录屏幕是一种很好的做法。
          */
+        logger.info("IP:{}注销登录。", request.getRemoteAddr());
         return "redirect:/login";
     }
 }
