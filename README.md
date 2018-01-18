@@ -12,7 +12,7 @@ Introduction
 - git clone https://github.com/Rey70N/demo.git
 - cd demo && mvn install
 - java -jar target/web-v0.0.3-beta.2.jar
-- go to http://localhos/ default port: 80
+- go to http://localhost/ default port: 80
 - have fun.
 
 Documentation
